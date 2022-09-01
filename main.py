@@ -41,12 +41,19 @@ PasswordLabel.place(x=1000, y=180)
 PasswordEntry = Entry(tela, show="*",width=30)
 PasswordEntry.place(x=1000, y=200)
 #--------------------------------------
-def verifica_senha():
-    usuario = UserEntry.get()
-    password = PasswordEntry.get()
+def Login():
+    User = UserEntry.get()
+    Pass = PassEntry.get()
     
     if (usuario == "" and password == "" ):
         messagebox.showwarning(title="Erro no Registro", message="Algum campo vazio!")
+        
+    Databaser.cursor.execute("""
+    """
+
+    )
+    
+
 
 #--------------------------------------
 BtnEntrar = ttk.Button(tela, text= 'LOGIN', width=10, command="verifica_senha")

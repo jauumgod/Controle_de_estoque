@@ -34,8 +34,24 @@ class cadastro_cliente:
         label4.place(x=100, y=260)
         entrada4 = Entry(self.cad, width=30)
         entrada4.place(x=200, y=260)
-
         
+        def CadastroCliente(self):
+            self.nome = entrada1
+            self.cpf = entrada2
+            self.telefone = entrada3
+            self.endereco = entrada4
+            if entrada1, entrada2, entrada3, entrada4 ==0:
+                print("dados inseridos com sucesso!")
+            else:
+                print("dados invalidos")
+              
+                
+            
+        
+        btn_submit = Button(self.cad, text="Cadastrar", command = CadastroCliente)
+        btn_submit.place(x=1100, y=600)
+
+
 
         btnsair = Button(self.cad, text="Sair", command=sair)
         btnsair.place(x=1100, y=700)
